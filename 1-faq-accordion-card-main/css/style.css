@@ -1,0 +1,291 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p {
+  margin: 10px 0;
+  line-height: 1.5em;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(#af67e9, #6565e7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #4a4b5e;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 12px;
+}
+
+section {
+  position: relative;
+  width: 920px;
+  background-color: #fff;
+  border-radius: 20px;
+  background-image: url("../images/illustration-woman-online-desktop.svg"), url("../images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: -60px 60px, -560px -300px;
+  padding: 100px 80px;
+  -webkit-box-shadow: 0px 28px 20px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 28px 20px 5px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  margin-left: 60px;
+}
+
+.box-img {
+  position: absolute;
+  left: -93px;
+  top: 200px;
+}
+
+.woman-online-mobile-img {
+  display: none;
+}
+
+.bg-pattern-mobile-img {
+  display: none;
+}
+
+h1 {
+  width: 45%;
+  color: #4a4b5e;
+  font-size: 26px;
+  margin: 20px 0 20px auto;
+  font-weight: 700;
+}
+
+.block {
+  width: 45%;
+  margin-left: auto;
+  border-bottom: 1px solid #e7e7e9;
+}
+
+.block__header_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.block__header_wrap:hover {
+  cursor: pointer;
+}
+
+.block__header {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.block__header--active {
+  font-weight: 700;
+}
+
+.block__arrow-img--active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.block__text {
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.block__text--show {
+  opacity: 1;
+  height: auto;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    height: auto;
+  }
+  h1 {
+    text-align: center;
+  }
+  section {
+    background-image: none;
+    padding: 100px 40px;
+    margin-top: 140px;
+    margin-left: 20px;
+  }
+  .box-img {
+    display: none;
+  }
+  .woman-online-mobile-img {
+    display: block;
+    position: absolute;
+    left: 46%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: -110px;
+  }
+  .bg-pattern-mobile-img {
+    display: block;
+    position: absolute;
+    left: 52%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 0px;
+  }
+  h1 {
+    width: 100%;
+  }
+  .block {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
