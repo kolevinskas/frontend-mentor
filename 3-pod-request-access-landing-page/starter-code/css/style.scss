@@ -1,0 +1,130 @@
+@import './reset';
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,700;1,400&display=swap');
+
+$mainBgColor: #121725;
+$accentColor: #54e6af;
+$textColor: #c2cbe5;
+$darkColor: #2c344b;
+
+* {
+    box-sizing: border-box;
+    // outline: 1px solid red;
+}
+
+body {
+    margin: 0;
+    font-family: 'Chivo', sans-serif;
+    background: $mainBgColor;
+    color: $textColor;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 100vh;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+section {
+    position: relative;
+    height: 80vh;
+    width: 60vw;
+    background: url('../assets/desktop/image-host.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+
+    display: flex;
+    // align-items: flex-end;
+
+    .logoImg {
+        position: absolute;
+        top: -28px;
+        left: -40%;
+    }
+
+    .imgDots {
+        position: absolute;
+        bottom: -50px;
+        right: 0px;
+    }
+}
+
+main {
+    background: $mainBgColor;
+    padding-top: 80px;
+    padding-right: 30px;
+    width: 65%;
+    margin-top: auto;
+    margin-left: -40%;
+}
+
+article {
+    h1 {
+        font-size: 52px;
+        line-height: 62px;
+        color: $accentColor;
+        margin-bottom: 24px;
+        white-space: nowrap;
+    }
+
+    span {
+        color: #fff;
+    }
+
+    p {
+        margin-bottom: 40px;
+        width: 80%;
+    }
+}
+
+form {
+    .inputWrap {
+        background: $darkColor;
+        width: 80%;
+        border-radius: 28px;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    input {
+        color: #fff;
+        height: 56px;
+        border-radius: 28px;
+        background: $darkColor;
+        border: none;
+        padding: 14px 32px;
+        font-weight: 700;
+        width: 60%;
+        &:focus {
+            outline: none;
+
+            &::placeholder {
+                color: #fff;
+            }
+        }
+    }
+
+    button {
+        // position: absolute;
+        // left: 80%;
+        background: $accentColor;
+        border: none;
+        border-radius: 28px;
+        color: $darkColor;
+        font-weight: 700;
+        padding: 9px 27px;
+
+        &:hover {
+            background-color: #b3ffe2;
+        }
+    }
+}
+
+.sponsors {
+    padding-top: 65px;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+    }
+}

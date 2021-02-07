@@ -1,0 +1,277 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,700;1,400&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Chivo', sans-serif;
+  background: #121725;
+  color: #c2cbe5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  min-height: 100vh;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+section {
+  position: relative;
+  height: 80vh;
+  width: 60vw;
+  background: url("../assets/desktop/image-host.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .logoImg {
+  position: absolute;
+  top: -28px;
+  left: -40%;
+}
+
+section .imgDots {
+  position: absolute;
+  bottom: -50px;
+  right: 0px;
+}
+
+main {
+  background: #121725;
+  padding-top: 80px;
+  padding-right: 30px;
+  width: 65%;
+  margin-top: auto;
+  margin-left: -40%;
+}
+
+article h1 {
+  font-size: 52px;
+  line-height: 62px;
+  color: #54e6af;
+  margin-bottom: 24px;
+  white-space: nowrap;
+}
+
+article span {
+  color: #fff;
+}
+
+article p {
+  margin-bottom: 40px;
+  width: 80%;
+}
+
+form .inputWrap {
+  background: #2c344b;
+  width: 80%;
+  border-radius: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+}
+
+form input {
+  color: #fff;
+  height: 56px;
+  border-radius: 28px;
+  background: #2c344b;
+  border: none;
+  padding: 14px 32px;
+  font-weight: 700;
+  width: 60%;
+}
+
+form input:focus {
+  outline: none;
+}
+
+form input:focus::-webkit-input-placeholder {
+  color: #fff;
+}
+
+form input:focus:-ms-input-placeholder {
+  color: #fff;
+}
+
+form input:focus::-ms-input-placeholder {
+  color: #fff;
+}
+
+form input:focus::placeholder {
+  color: #fff;
+}
+
+form button {
+  background: #54e6af;
+  border: none;
+  border-radius: 28px;
+  color: #2c344b;
+  font-weight: 700;
+  padding: 9px 27px;
+}
+
+form button:hover {
+  background-color: #b3ffe2;
+}
+
+.sponsors {
+  padding-top: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=style.css.map */
